@@ -1,0 +1,7 @@
+#!/bin/bash
+
+# print all commands as they execute
+set -x
+
+mkdir -p flat_contracts
+truffle-flattener contracts/CoreStaking.sol > flat_contracts/flat_staking.sol
